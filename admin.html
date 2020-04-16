@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>admin login</title>
+	<link rel="stylesheet" type="text/css" href="are.css">
+</head>
+<script>
+function validate(){
+alert("checking credentials");
+var adminId= document.getElementById("adminId").value;
+var adminPassword= document.getElementById("adminPassword").value;
+
+if("123"==(adminPassword) && "admin"==(adminId)){
+alert("login successful");
+window.document.location="./newadmin.html"
+}
+else
+alert("Userid or password are wrong")
+} 
+</script>
+<body>
+	<header>
+<div class="top">
+			<ul class="nav-menu">
+				<li class="homebtn"> 
+					<a href="./salon.html">Home</a></li>
+				<li><a href="./service.html">Service</a>
+				</li>
+				<li><a href="./admin.html">Admin</a></li>
+				<li><a href="./contact.html">Contact</a></li>
+			</ul>
+		</div>
+<form>
+	<div class="tagline"><h4>
+		<p>Admin login</p>
+	User Id:<input type="text" name="adminId" id="adminId">
+<br> Password:<input type="password" name="adminPassword" id="adminPassword"><br>
+<!--submit<input type="button" name="submit" onclick="validate()">-->
+<button name="button"type="button" onclick="validate()">submit</button>
+</h4></div>
+</form>
+
+</header>
+</body>
+</html>

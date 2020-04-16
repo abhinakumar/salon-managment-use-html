@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>new admin</title>
+	<link rel="stylesheet" type="text/css" href="are.css">
+	<script>
+		/*function displayDiv(){
+document.getElementById('displayDiv').classList.remove('hideDiv');
+		}
+		function inventory(){
+document.getElementById('inventory').classList.remove('hideDiv');
+		}
+		function viewsalary(){
+document.getElementById('viewsalary').classList.remove('hideDiv');
+		}
+		function bill(){
+document.getElementById('bill').classList.remove('hideDiv');
+		}*/
+        function displayDiv() {
+  var x = document.getElementById('displayDiv');
+  if (x.style.visibility === 'hidden') {
+    x.style.visibility = 'visible';
+  } else {
+    x.style.visibility = 'hidden';
+  }
+}
+function inventory() {
+  var y = document.getElementById('inventory');
+  if (y.style.visibility === 'hidden') {
+    y.style.visibility = 'visible';
+  } else {
+    y.style.visibility = 'hidden';
+  }
+}
+function viewsalary() {
+  var z = document.getElementById('viewsalary');
+  if (z.style.visibility === 'hidden') {
+    z.style.visibility = 'visible';
+  } else {
+    z.style.visibility = 'hidden';
+  }
+}
+function bill() {
+  var a = document.getElementById('bill');
+  if (a.style.visibility === 'hidden') {
+    a.style.visibility = 'visible';
+  } else {
+    a.style.visibility = 'hidden';
+  }
+}
+//end
+	</script>
+	<style>
+		table {
+			display: table;
+			border-collapse: separate;
+			border-spacing: 2px;
+			border-color: gray;
+		}
+		
+
+	</style>
+</head>
+<body>
+	<header>
+	<div >
+			<ul class="nav-menu">
+				<li class="homebtn"> 
+					<a href="./salon.html">Home</a></li>
+				<li><a href="./ Services.html">Service</a>
+				</li>
+				<li><a href="./admin.html">Admin</a></li>
+				<li><a href="./contact.html">Contact</a></li>
+			</ul>
+		</div>	
+	<div class="nev-menu">
+<div class="seviced-link"> 
+<table  style="
+    height: 70%;
+    width: 100%;
+" ><tr><td>
+        <table class="services">
+        	<thead>
+        <tr>
+            <th colspan="1"><h6>services</h6></th>
+        </tr>
+    </thead><tbody>
+        	<tr>
+    		<td style="color: yellow" >HAIR CUTTING</td></tr>
+            <tr><td style="color: brown">SPA</td></tr>
+            <tr><td style="color: aqua">MASSAGE</td></tr>
+
+            <tr><td style="color: aqua">FACIAL</td></tr>
+        </tr>
+</tbody>
+        </table>
+    </td><td>
+         <table class="link">
+        	<thead>
+        <tr>
+            <th colspan="1"> <h6>links </h6></th> 
+        </tr>
+    </thead><tbody><form>
+        	<tr>
+    		<td><button style="width: 70%" name="button"type="button" onclick="displayDiv()">Employee salary</button></td></tr>
+            <tr><td><button style="width: 70%" name="button"type="button" onclick="inventory()">New Inventory</button></td></tr>
+            <tr><td><button style="width: 70%" name="button"type="button" onclick="viewsalary()">View salary</button></td></tr>
+            <tr><td><button style="width: 70%" name="button"type="button" onclick="bill()"><a href="./bill.html">Generate Bill</a></button></td></tr>
+        </tr>
+</form>
+    </tbody>
+</table>
+</td>
+<td>
+        <table  style="margin-right: 10px margin-top:20px">
+        
+            <tr>
+            <h4>Admin</h4><b>
+          <h6>--> <button style="width: 40%" type="button" onclick="displayDiv()"> Check and Manage Salary</button></h6> <br>
+          <h6>--> <button style="width: 40%" type="button" onclick="inventory()"> Manage inventory</button></h6><br>
+          <h6>--> <button style="width: 40%" type="button" onclick="bill()"><a href="./bill.html">Generate Bill</a></button></h6>
+
+        </tr>
+
+        </table>
+    </td>
+</tr>
+</table>
+
+<!----><table>
+    <tr>
+
+<td>
+<!--<div id= "inventory" class="hideDiv" > --> 
+<div id="inventory" class="hideDiv">
+<table>
+            <thead>
+        <tr>
+            <th colspan="1">S no </th> <th colspan="2">product</th><th colspan="1">Qun</th><th colspan="2">Date</th><th colspan="1">cost per</th><th colspan="1">total</th>
+        </tr>
+    </thead><tbody>
+            
+            <tr><td>1.</td><td colspan="2">hair cream</td><td>4</td><td colspan="2">14/4/2020</td><td>@100</td><td>@400</td></tr>
+            <tr><td>2.</td><td colspan="2">Dimond facial kit</td><td>2</td><td colspan="2">14/4/2020</td><td>@3000</td><td>@6000</td></tr>
+            <tr><td>3.</td><td colspan="2">trimer</td><td>3</td><td colspan="2">14/4/2020</td><td>@2000</td><td>@6000</td></tr>
+            <tr><td>4.</td><td colspan="2">Hair Shampoo</td><td>10</td><td colspan="2">14/4/2020</td><td>@500</td><td>@5000</td></tr>
+            <tr><td>5.</td><td colspan="2">Razor Blade</td><td>100</td><td colspan="2">14/4/2020</td><td>@3</td><td>@300</td></tr>
+            <tr><td>6.</td><td colspan="2">pedicular chair</td><td>2</td><td colspan="2">14/4/2020</td><td>@20000</td><td>@40000</td></tr>
+            <tr><td>7.</td><td colspan="2">Hair Curling iron</td><td>4</td><td colspan="2">14/4/2020</td><td>@600</td><td>@2400</td></tr>
+            <tr><td>8.</td><td colspan="2">hair Dye brush</td><td>4</td><td colspan="2">14/4/2020</td><td>@100</td><td>@400</td></tr>
+            <tr><td>9.</td><td colspan="2">Hair color</td><td>10</td><td colspan="2">10/3/2020</td><td>@250</td><td>@2500</td></tr>
+            <tr><td>10.</td><td colspan="2">Hand mirrors</td><td>4</td><td colspan="2">10/3/2020</td><td>@100</td><td>@400</td></tr>
+            <tr><td>11.</td><td colspan="2">Makeup Brush</td><td>5</td><td colspan="2">10/3/2020</td><td>@800</td><td>@4000</td></tr>
+            <tr><td>12.</td><td colspan="2"> Shaving Kit</td><td>4</td><td colspan="2">10/3/2020</td><td>@300</td><td>@1200</td></tr>
+            <tr><td>13.</td><td colspan="2">Massage Bed</td><td>4</td><td colspan="2">10/3/2020</td><td>@25000</td><td>@100000</td></tr>
+            
+            </tr>
+        </tr>
+</tbody>
+ </table>
+</div>
+</td>
+<td>
+       <!-- <div class="hideDiv" id= "displayDiv">-->
+       <div id="displayDiv" class="hideDiv">	
+<table>
+        	<thead>
+            </thead><tbody><form>
+        	<tr><td><h4>Name:*<input type="text" name="name"></h4></td></tr>
+        	<tr><td><h4>Money:*<input type="text" name="money"></h4></td></tr>
+            <tr><td><button style="width: 40%" type="button">Submit</button></td></tr>
+            <tr><td><a href="">view slary</a></td></tr>
+        </tr>
+    </form>
+</tbody>
+ </table>
+</div>
+</td>
+<td>
+<!--  pre  <div id= "viewsalary" class="hideDiv">-->
+<div id="viewsalary" class="hideDiv">	
+<table>
+        	<thead>
+        <tr>
+            <th colspan="1">S no </th> <th colspan="1">Name</th> <th colspan="1">Salary</th>
+        </tr>
+    </thead><tbody>
+   	<tr><td>1.</td><td>Hanuman</td>  <td> 15000</td></tr>
+	<tr><td>2.</td><td>Ram</td>  <td> 12000</td></tr>
+    <tr><td>3.</td><td>modi</td>  <td> 12500</td></tr>
+    <tr><td>5.</td><td>rajan</td>  <td> 33000</td></tr>
+    <tr><td>6.</td><td>amish</td>  <td> 33000</td></tr>
+    <tr><td>7.</td><td>ritika</td>  <td> 143000</td></tr>
+    <tr><td>8.</td><td>rekha</td>  <td> 54000</td></tr>
+      
+        </tr>
+</tbody>
+ </table>
+</div>
+</td>
+</tr>
+<div id="bill"> <a href="./bill.html"></a></div>
+</header>
+</body>
+</html>

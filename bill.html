@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="are.css">
+	<title>BILL FORM</title>
+</head>
+<body>
+  <footer>
+  <div class="raa"> 
+<div >
+      <ul class="nav-menu">
+        <li class="homebtn"> 
+          <a href="./salon.html">Home</a></li>
+        <li><a href="./service.html">Service</a>
+        </li>
+        <li><a href="./admin.html">Admin</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+      </div>
+      <h3>ABHIDEV SALON BILL</h3> 
+<div >
+  <ul class="errors">
+    <h5>Shipping</h5>
+  <form>
+  	 time:<input type="time" name="time"><br>
+  	date:<input type="date" name="date">
+  </form>
+  <h5>Billing Information</h5>
+  <form>
+  <table class="form-tbl" cellspacing="0">
+    <tbody>
+      <tr>
+        <th>&nbsp;</th>
+        <td>
+          <input type="checkbox" name="populateinfo" value="1" id="populateinfo" />
+          <label for="populateinfo">My bill is the same as my shipping information</label>
+        </td>
+      </tr>
+      <tr>
+      	<th><label for="{#billing.form.fields.billFirstName.id}"> Name <em>*</em></label></th> <td> <input type="text" name="First name"></td>
+      </tr>
+      <tr>
+        <th><label for="{#billing.form.fields.billAddress.id}">Address <em>*</em></label></th>
+        <td><input type="text" name="Address "></td></td>
+      </tr>
+      
+      <tr>
+        <th><label for="{#billing.form.fields.billCountry.id}">Country <em>*</em></label></th>
+        <td><input type="text" name="Country" value=INDIA></td>
+      </tr>
+      <tr>
+        <th><label for="{#billing.form.fields.billPhone.id}">Phone <em>*</em></label></th>
+        <td><input type="text" name="Phone" minlength="10" maxlength="10" syle=color:transparent></td>
+      </tr>
+      <tr>
+        <th><label for="{#billing.form.fields.billEmail.id}">Service <em>*</em></label></th>
+        <td><label for="cars">your surcice:</label>
+  <select id="Service" name="Service">
+    <option value="hatr cut">Hair cut</option>
+    <option value="spa">spa</option>
+    <option value="Maassage">Maassage</option>
+    <option value="facial">Facial</option>
+  </select>
+</td>
+      </tr>
+      
+    </tbody>
+  </table>
+  <h5>Payment Information</h5>
+  <table class="form-tbl" cellspacing="0">
+    <tbody>
+      <tr>
+        <th><label for="{#billing.form.fields.billCreditCardType.id}">Credit Card Type <em>*</em></label></th>
+        <td><input type="text" name="billCreditCardNumber"></td>
+      </tr>
+      <tr>
+        <th><label for="{#billing.form.fields.billCreditCardNumber.id}">Card Number <em>*</em></label></th>
+         <td><input type="text" name="Card Number"></td>
+      </tr>
+       <tr>
+         <th><label for="{#billing.form.fields.billCreditCardExpirationMonth.id}">Expiration <em>*</em></label></th>
+         <td><input type="date" name="billCreditCardExpirationMonth" value="date"></td>
+      </tr>
+      <tr>
+        <th><label for="{#billing.form.fields.billCreditCardCode.id}">Security Code <em>*</em></label></th>
+        <td><input type="text" name="code"><div class="smallText">3 or 4 digit code from the back of your credit card</div></td>
+      </tr>
+       <tr>
+         <th>&nbsp;</th>
+        <td><input type="submit" name="submit" value="Continue &raquo"  /></td>
+       <tr> <td> 
+       <div class="print"> 
+        DO you want bill:-<button name="button"type="button" onclick="print()">print</button></td></div>
+      </tr>
+    </tbody>
+  </table>
+{#billing.form.tag.close}
+</div>
+</footer>
+</body>
+</html>
